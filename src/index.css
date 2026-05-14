@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+  color: white;
+}
+
+.courteous::before {
+  content: "";
+  background-color: #666;
+  height: 2px;
+  width: 0%;
+  position: absolute;
+  inset: 0;
+  transition: 0.3s;
+  left: 0;
+  bottom: 0;
+  top: 1.2em;
+}
+
+.courteous:hover::before {
+  width: 100%;
+}
+
+.center-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
